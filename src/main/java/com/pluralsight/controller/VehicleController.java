@@ -25,10 +25,10 @@ public class VehicleController
                                         @RequestParam(required = false) String make,
                                         @RequestParam(required = false) String model,
                                         @RequestParam(required = false) Integer year,
+                                        @RequestParam(required = false) Double price,
                                         @RequestParam(required = false) String color,
                                         @RequestParam(required = false) Integer mileage,
                                         @RequestParam(required = false) String type,
-                                        @RequestParam( required = false) double price,
                                         @RequestParam(required = false) String condition,
                                         @RequestParam(required = false) String leaseStatus)
     {
