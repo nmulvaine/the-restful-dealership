@@ -1,30 +1,32 @@
 package com.pluralsight.dataTables;
 
-
-// TODO look up record class
 public class Vehicle
 {
-    private final String id;
-    private final String make;
-    private final String model;
-    private final int year;
-    private final double price;
-    private final int mileage;
-    private final boolean available;
-    private final String condition;
-    private final String leaseStatus;
+    private String vin;
+    private String make;
+    private String model;
+    private String type;
+    private int year;
+    private double price;
+    private String color;
+    private int mileage;
+    private String condition;
+    private String leaseStatus;
+    private boolean available;
 
-    public Vehicle(boolean available, String id, String make, String model, int year, double price, int mileage, String condition, String leaseStatus)
+    public Vehicle(boolean available, String color, String condition, String leaseStatus, String make, int mileage, String model, double price, String type, String vin, int year)
     {
         this.available = available;
-        this.id = id;
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.price = price;
-        this.mileage = mileage;
+        this.color = color;
         this.condition = condition;
         this.leaseStatus = leaseStatus;
+        this.make = make;
+        this.mileage = mileage;
+        this.model = model;
+        this.price = price;
+        this.type = type;
+        this.vin = vin;
+        this.year = year;
     }
 
     public boolean isAvailable()
@@ -32,14 +34,14 @@ public class Vehicle
         return available;
     }
 
+    public String getColor()
+    {
+        return color;
+    }
+
     public String getCondition()
     {
         return condition;
-    }
-
-    public String getId()
-    {
-        return id;
     }
 
     public String getLeaseStatus()
@@ -67,8 +69,31 @@ public class Vehicle
         return price;
     }
 
+    public String getType()
+    {
+        return type;
+    }
+
+    public String getVin()
+    {
+        return vin;
+    }
+
     public int getYear()
     {
         return year;
+    }
+
+    @Override
+    public String toString()
+    {
+        return String.format("%s | %s | %s | %s | %d | %.2f | %s | %d | %s, | $s | %b",
+                vin, make, model, type, year, price, color, mileage, condition, leaseStatus, available);
+    }
+
+    public String toCSV()
+    {
+        return String.format("%s | %s | %s | %s | %d | %.2f | %s | %d | %s, | $s",
+                vin, make, model, type, year, price, color, mileage, condition, leaseStatus);
     }
 }
