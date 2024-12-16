@@ -44,8 +44,8 @@ public class SqlDealershipDao
         } catch (SQLException e)
         {
             throw new RuntimeException(e);
-        }
-    } return null;
+        }return null;
+    } 
 }
 
 
