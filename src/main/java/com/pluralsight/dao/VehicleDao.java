@@ -1,6 +1,6 @@
 package com.pluralsight.dao;
 
-import com.pluralsight.dataTables.Vehicle;
+import com.pluralsight.model.Vehicle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

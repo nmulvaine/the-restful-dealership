@@ -1,6 +1,6 @@
 package com.pluralsight.dao;
 
-import com.pluralsight.dataTables.Vehicle;
+import com.pluralsight.model.Vehicle;
 
 import java.util.List;
 

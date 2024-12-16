@@ -1,8 +1,7 @@
 package com.pluralsight.controller;
 
-import com.pluralsight.dao.VehicleDao;
 import com.pluralsight.dao.VehicleDaoInterface;
-import com.pluralsight.dataTables.Vehicle;
+import com.pluralsight.model.Vehicle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

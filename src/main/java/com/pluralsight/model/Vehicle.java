@@ -1,4 +1,4 @@
-package com.pluralsight.dataTables;
+package com.pluralsight.model;
 
 public class Vehicle
 {
